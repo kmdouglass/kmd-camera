@@ -1,0 +1,19 @@
+[project]
+name = "kmd-camera"
+version = "0.1.0"
+description = "A CMOS Camera Model for Microscopy Simulations"
+readme = "README.md"
+authors = [
+    { name = "Kyle M. Douglass", email = "kyle.m.douglass@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.3.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.12,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "kmd.camera"
